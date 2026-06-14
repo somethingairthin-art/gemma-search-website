@@ -42,7 +42,7 @@ if search_query and search_clicked:
     with st.spinner("Gemma is thinking..."):
         try:
             # Call Gemma 2 model
-            model = genai.GenerativeModel("gemma2-9b-it")
+            model = genai.GenerativeModel('gemini-1.5-flash')
             prompt = f"Act like an AI search engine. Provide a structured, clear summary answering this query: {search_query}"
             response = model.generate_content(prompt)
             
